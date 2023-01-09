@@ -2,7 +2,7 @@ package org.example.Thirteen;
 
 public class Thirteen {
     public static void main(String[] args) {
-        int a = 221;
+        int a = 2147483647;
         int b = -123;
         System.out.println(reversInt(a));
         System.out.println(reversInt(b));
