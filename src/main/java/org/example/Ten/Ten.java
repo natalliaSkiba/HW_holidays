@@ -1,7 +1,9 @@
 package org.example.Ten;
 
 import java.util.Scanner;
-
+//Дана стринга String r = "otiwuklf'
+//        Написать метод где вы вводите символ а метод возвращает индекс.
+//        Если буквы нет то соответствующее сообщение
 public class Ten {
     public static void main(String[] args) {
         String s = "otiwuklf";

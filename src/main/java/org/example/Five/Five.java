@@ -2,7 +2,7 @@ package org.example.Five;
 
 import java.util.Arrays;
 import java.util.Comparator;
-
+//Отсортировать строки в алфавитном порядке стримом и в обратном
 public class Five {
     public static void main(String[] args) {
         String str = """

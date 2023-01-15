@@ -1,12 +1,7 @@
 package org.example.Three;
-
-import java.util.Arrays;
-import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-
-import static java.util.Arrays.*;
-
+//3**. Дана стринга  String ss = "KikJhYggfTgf" ( это пример )
+//        вывести на экран кол-во букв в верхнем и нижнем регистре используя СТРИМЫ
 public class Three {
     public static void main(String[] args) {
         String ss = "KikJhYggfTgf";

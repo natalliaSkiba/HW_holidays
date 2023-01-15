@@ -1,8 +1,9 @@
 package org.example.Nine;
 
 import java.util.*;
-import java.util.stream.Collectors;
-
+//9*. Дано String s = "AAGGTFFDDVVAA" или похожая.
+//        Вывести на экран кол-во повторений в таком виде
+//        "4A2G1T2F2D2V"
 public class Nine {
     public static void main(String[] args) {
         String s = "AAFFFGGYYYYYRR";

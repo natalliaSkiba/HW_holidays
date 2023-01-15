@@ -2,14 +2,9 @@ package org.example.Seven;
 
 import org.example.Seven.students.Student;
 
-import java.awt.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.List;
-
+//Взять наш класс Student ( или сделать свой) изменить имена и фамилии на заглавные и сгруппировать по курсу стримом
 public class Seven {
     public static void main(String[] args) {
         Student st1 = new Student("Uliana", 'f', 25, 2, 7.4);
@@ -24,14 +19,14 @@ public class Seven {
         students.add(st3);
         students.add(st4);
         students.add(st5);
-        Map<Integer, List<Student>> map = students.stream()
+        students.stream()
                 .map(s -> {
                     s.setName(s.getName().toUpperCase());
                     return s;
                 })
-                .collect(Collectors.groupingBy(s -> s.getCourse()));
-        for (Map.Entry<Integer, List<Student>> entry : map.entrySet()) {
-            System.out.println(entry);
-        }
+                .collect(Collectors.groupingBy(s -> s.getCourse()))
+                .entrySet()
+                .stream()
+                .forEach(System.out::println);
     }
 }
