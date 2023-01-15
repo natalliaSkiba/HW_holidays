@@ -19,6 +19,7 @@ public class Seven {
         students.add(st3);
         students.add(st4);
         students.add(st5);
+
         students.stream()
                 .map(s -> {
                     s.setName(s.getName().toUpperCase());
